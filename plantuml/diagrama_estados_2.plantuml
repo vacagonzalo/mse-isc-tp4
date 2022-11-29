@@ -1,0 +1,20 @@
+@startuml Paralelo
+
+state S0 : Funciona
+state S1 : Funciona
+state S2 : Funciona
+state S3 : Falla
+
+S0 --> S2 : a02
+S0 --> S3 : a03
+
+S1 --> S2 : a12
+S1 --> S3 : a13
+
+S2 --> S0 : a20
+S2 --> S1 : a21
+
+S3 --> S0 : a30
+S3 --> S1 : a31
+
+@enduml

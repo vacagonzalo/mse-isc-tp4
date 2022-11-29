@@ -1,0 +1,13 @@
+@startuml Transicion
+
+S0 : Falla
+S1 : Falla
+S2 :
+
+S0 -> S2 : A02
+S1 -> S2 : A12
+S2 -> S0 : A20
+S2 -> S1 : A21
+
+
+@enduml
