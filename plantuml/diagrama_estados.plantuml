@@ -1,13 +1,13 @@
 @startuml Transicion
 
-S0 : Falla
-S1 : Falla
-S2 :
+state 0 : Falla
+state 1 : Falla
+state 2 : Funciona
 
-S0 -> S2 : A02
-S1 -> S2 : A12
-S2 -> S0 : A20
-S2 -> S1 : A21
+0 --> 2 : a_02
+1 --> 2 : a_12
+2 --> 0 : a_20
+2 --> 1 : a_21
 
 
 @enduml
