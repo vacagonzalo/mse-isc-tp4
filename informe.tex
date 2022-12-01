@@ -222,9 +222,35 @@ A partir de la siguiente definición:
 
 $$ \theta_j = \frac{1}{\alpha_j} = \frac{1}{\sum_{k=0, k \neq j}^{r} a_{kj}} $$
 
+$$ \theta_0 = \frac{1}{\mu_2} = 8 $$
+$$ \theta_1 = \frac{1}{\mu_1} = 8 $$
+$$ \theta_2 = \frac{1}{\lambda_1 + \lambda_2} = 50 $$
+
 \subsubsection{Frecuencia de falla del sistema, $ \omega_F $}
+\label{sss:omega}
+
+A partir de la diapositiva 48 se dice que:
+
+La frecuencia de fallas del sistema, $ \omega_F $, es la misma que la frecuencia de visitas
+al estado 2 (notar que en el ejemplo es el estado 3). Por lo tanto (adaptado al ejercicio):
+
+$$ \omega_F = P_2 * (\lambda_1 + \lambda_2) = 0.01724 $$
+
 \subsubsection{Tiempo medio entre fallas del sistema, $ MTBF_s $.}
+
+$$ MTBF_s = \frac{1}{\omega_F } $$
+
+A partir de lo calculado en \ref{sss:omega}:
+
+$$ MTBF_s = 58 $$
+
 \subsubsection{Tiempo medio de falla del sistema, $ MTTF $.}
+
+$$ \theta_f = \frac{1-A_s}{\omega_F} $$
+
+$$ \theta_f = \frac{1-0.015748031}{0.01724} $$
+
+$$ \theta_f =  57,091181497 $$
 
 
 \subsection{Analice otro diagrama de transición de estados si los dos componentes estuvieran en paralelo.}
